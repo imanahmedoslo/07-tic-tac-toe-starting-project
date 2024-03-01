@@ -79,7 +79,7 @@ function App() {
       <div id="game-container">
         <ol id="players" className="highlight-player">
           <Player handleEditing={handlePlayerNameChange} currentPlayer={currentPlayer} name={PLAYERS.X} symbol={"X"}/>
-          <Player handleEditing={handlePlayerNameChange} currentPlayer={currentPlayer} name={PLAYERS.Y} symbol={"O"}/>
+          <Player handleEditing={handlePlayerNameChange} currentPlayer={currentPlayer} name={PLAYERS.O} symbol={"O"}/>
         </ol>
         {(winner||hasDraw)&& <GameOver onRestart={handleRestart} winner={winner}/>}
        <GameBoard OnselectSquare={OnselectSquare} player={currentPlayer} board={gameBoard}/>
